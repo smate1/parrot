@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <header class="header">
+      <div class="container">
+        <h2 class="stock__exchange-title">
+          ParrotWings Exchange
+        </h2>
+        <div class="header__links">
+          <a class="header__link" href="#">
+            Home
+          </a>
+          <a class="header__link" href="#">
+            Credits
+          </a>
+          <a class="header__link" href="#">
+            Exchange
+          </a>
+          <a class="header__link" href="#">
+            Partners
+          </a>
+          <a class="header__link" href="#">
+            Stock
+          </a>
+          <a class="header__link" href="#">
+            Holding
+          </a>
+          <a class="header__link" href="#">
+            About
+          </a>
+        </div>
+      </div>
+      <div class="stock__reg">
+        <h3 class="stock__reg-title">
+          Sign Up
+        </h3>
+        <hr>
+        <input class="stock__reg-input" type="text" placeholder="First Name">
+        <input class="stock__reg-input" type="text" placeholder="Last Name">
+        <input class="stock__reg-input" type="text" placeholder="Email">
+        <p class="stock__reg-policy">
+          By creating a PW Exchange Account you acknowledge that you have read, understood and agree to the <span>
+            Terms of Use and
+            Privacy Policy.
+          </span>
+        </p>
+        <button class="stock__reg-btn">
+          Sign Up
+        </button>
+      </div>
+      <form class="stock__exchange-form">
+        <input type="text" placeholder="Search...">
+        <button><img src="/images/search.svg" alt=""></button>
+      </form>
+      <button class="burger-btn" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="search-btn" id="search-btn">
+        <img src="./images/search.svg" alt="">
+      </button>
+    </header>
+    <section class="stock">
+      <div class="container">
+        <div class="page-container">
+          <div class="stock__wrapper">
+            <div class="stock-left">
+              <div class="stock__exchange">
+                <h2 class="stock__exchange-title">
+                  ParrotWings Exchange
+                </h2>
+                <form class="stock__exchange-form">
+                  <input type="text" placeholder="Search...">
+                  <button><img src="/images/search.svg" alt=""></button>
+                </form>
+              </div>
+              <div class="stock__products">
+                <h3 class="stock__products-title">
+                  Products
+                </h3>
+                <div class="stock__products-items">
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-1.png" alt="">
+                    <div class="stock__products-item--count">
+                      2 props
+                    </div>
+                    <div class="stock__products-item--name">
+                      Unlimited exchange
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-2.png" alt="">
+                    <div class="stock__products-item--count">
+                      1 prop
+                    </div>
+                    <div class="stock__products-item--name">
+                      International exchange
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-3.png" alt="">
+                    <div class="stock__products-item--count">
+                      3 props, all
+                    </div>
+                    <div class="stock__products-item--name">
+                      Additional services
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-4.png" alt="">
+                    <div class="stock__products-item--count">
+                      5 props
+                    </div>
+                    <div class="stock__products-item--name">
+                      Support
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-5.png" alt="">
+                    <div class="stock__products-item--count">
+                      2 props
+                    </div>
+                    <div class="stock__products-item--name">
+                      Holiday works
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                      <div class="product__popup">
+                        <p class="product__popup-title">
+                          Popup header
+                        </p>
+                        <p class="product__popup-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore.
+                        </p>
+                      </div>
+                      <svg class="product__popup-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
+                        viewBox="0 0 24 12" fill="none">
+                        <path
+                          d="M13.9745 10.6347C12.773 11.9092 10.7397 11.8876 9.56552 10.5879L0 0L24 0L13.9745 10.6347Z"
+                          fill="black" fill-opacity="0.8" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-6.png" alt="">
+                    <div class="stock__products-item--count">
+                      not in access
+                    </div>
+                    <div class="stock__products-item--name">
+                      Postal delivery
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-7.png" alt="">
+                    <div class="stock__products-item--count">
+                      2 props
+                    </div>
+                    <div class="stock__products-item--name">
+                      Document manage
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                  <div class="stock__products-item">
+                    <img class="stock__products-item--img" src="/images/product-8.png" alt="">
+                    <div class="stock__products-item--count">
+                      1 prop
+                    </div>
+                    <div class="stock__products-item--name">
+                      Promotions
+                    </div>
+                    <button class="stock__products-item--btn">
+                      Order
+                    </button>
+                  </div>
+                </div>
+                <div class="stock__products-wrapper">
+                  <button class="stock__products-more" href="#">
+                    More products...
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="stock-right">
+              <div class="stock__reg">
+                <h3 class="stock__reg-title">
+                  Sign Up
+                </h3>
+                <hr>
+                <input class="stock__reg-input" type="text" placeholder="First Name">
+                <input class="stock__reg-input" type="text" placeholder="Last Name">
+                <input class="stock__reg-input" type="text" placeholder="Email">
+                <p class="stock__reg-policy">
+                  By creating a PW Exchange Account you acknowledge that you have read, understood and agree to the <span>
+                    Terms of Use and
+                    Privacy Policy.
+                  </span>
+                </p>
+                <button class="stock__reg-btn">
+                  Sign Up
+                </button>
+              </div>
+              <div class="stock__monitor">
+                <div class="stock__monitor-title">
+                  Online Monitor
+                </div>
+                <hr>
+                <div class="stock__monitor-loading">
+                  <svg class="stock__monitor-loading--icon" xmlns="http://www.w3.org/2000/svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                      <path
+                        d="M50.7799 28.68C50.4199 21.36 45.9799 14.52 39.3799 11.4C32.1799 8.16001 23.4199 9.48001 17.4199 14.52C11.6599 19.32 9.01988 27.12 10.6999 34.44C12.2599 41.64 17.8999 47.52 24.9799 49.44C33.4999 51.84 41.2999 47.76 46.0999 40.8C41.7799 46.56 35.1799 50.4 27.8599 49.08C20.5399 47.76 14.5399 42.24 12.8599 35.04C11.0599 27.36 14.6599 19.32 21.4999 15.36C28.5799 11.28 38.5399 12.84 43.2199 19.8C44.4199 21.48 45.2599 23.52 45.6199 25.56C45.9799 27.24 45.8599 29.04 46.0999 30.72C46.3399 32.28 47.6599 34.32 49.4599 33.24C51.0199 32.28 50.8999 30.24 50.7799 28.68C50.8999 29.52 50.7799 28.2 50.7799 28.68Z"
+                        fill="black" />
+                    </svg>
+                  </svg>
+                  <p class="stock__monitor-loading--text">Loading...</p>
+                </div>
+                <button class="stock__monitor-btn">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class=" page-container" style="background-color: #0d0d0d;">
+        <div class="footer__wrapper">
+          <div class="footer__left">
+            <div class="footer__icons">
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="51" height="60" viewBox="0 0 51 60" fill="none">
+                  <path
+                    d="M49.2488 10.4443C48.7988 8.04805 47.3625 6.8668 46.065 6.40555C44.6625 5.90305 41.8238 5.3818 38.2575 4.96555C35.3888 4.62805 32.0137 4.65805 29.9737 4.71805C29.73 3.0568 28.5525 1.53805 27.24 1.01305C23.7375 -0.385701 18.3225 -0.0482011 16.935 0.338049C15.8325 0.645549 14.61 1.2718 13.9275 2.2393C13.47 2.8843 13.1775 3.71305 13.1737 4.86805C13.1737 5.52055 13.1925 7.0618 13.2075 8.43055L13.2413 11.0405C13.2373 11.6314 12.9995 12.1966 12.58 12.6126C12.1605 13.0286 11.5933 13.2616 11.0025 13.2605H5.32125C4.11 13.2605 3.18375 13.463 2.47875 13.7818C1.77 14.1005 1.2675 14.5318 0.88875 15.038C0.13125 16.0468 0 17.2955 0 18.5668C0 18.5668 0.0112502 19.6055 0.2625 21.6155C0.4725 23.1718 2.175 34.043 3.79125 37.3505C4.4175 38.6368 4.83375 39.173 6.0675 39.7393C8.8125 40.9055 15.0787 42.1993 18.015 42.5705C20.9475 42.9418 22.7887 43.7255 23.8837 41.4455C23.895 41.4418 24.1088 40.8793 24.4088 40.0543C25.1639 37.7174 25.53 35.2724 25.4925 32.8168C25.4925 32.6293 25.77 32.6218 25.77 32.8168C25.77 34.1143 25.5225 38.7043 29.0175 39.9343C30.3975 40.418 33.2625 40.853 36.1688 41.1905C38.7975 41.4905 40.7063 42.5181 40.7063 49.208C40.7063 53.2805 39.8438 53.8393 35.3363 53.8393C31.68 53.8393 30.2888 53.933 30.2888 51.053C30.2888 48.728 32.61 48.9718 34.3313 48.9718C35.1 48.9718 34.5413 48.4055 34.5413 46.9693C34.5413 45.5406 35.4412 44.7155 34.59 44.693C28.6425 44.5318 25.1438 44.6855 25.1438 52.0618C25.14 58.763 27.7238 60.0043 36.165 60.0043C42.7838 60.0043 45.1163 59.7906 47.85 51.3793C48.39 49.718 49.6988 44.6518 50.49 36.1505C50.9925 30.7693 50.0175 14.5393 49.2488 10.4443ZM37.71 28.3843C36.9286 28.355 36.1462 28.4014 35.3738 28.523C35.58 26.873 36.2663 24.8443 38.7038 24.9268C41.4038 25.0205 41.7788 27.548 41.79 29.2618C40.4973 28.7153 39.1131 28.4176 37.71 28.3843ZM5.05875 11.6255H10.74C11.0662 11.6255 11.3287 11.363 11.3287 11.0443C11.3287 11.0443 11.2612 6.2143 11.2612 4.87555V4.86055C11.2612 3.75805 11.4937 2.79805 11.9025 1.9918L12.0975 1.6318C12.0733 1.63624 12.051 1.64803 12.0338 1.66555L1.00125 12.5143C0.981684 12.5312 0.967368 12.5533 0.96 12.578L1.545 12.293C2.50125 11.858 3.66375 11.6255 5.05875 11.6255Z"
+                    fill="#29292B" />
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <path
+                    d="M46.6993 4.28796C49.3555 4.28796 51.6267 5.23104 53.5129 7.11721C55.3991 9.00337 56.3421 11.2746 56.3421 13.9308V46.0737C56.3421 48.7299 55.3991 51.0011 53.5129 52.8873C51.6267 54.7735 49.3555 55.7165 46.6993 55.7165H40.4046V35.7947H47.0676L48.0721 28.0268H40.4046V23.0714C40.4046 21.8214 40.6669 20.8839 41.1915 20.2589C41.716 19.6339 42.7372 19.3214 44.2551 19.3214L48.3399 19.288V12.3572C46.9337 12.1563 44.9471 12.0558 42.3801 12.0558C39.3444 12.0558 36.9169 12.9487 35.0977 14.7344C33.2785 16.5201 32.3689 19.0424 32.3689 22.3014V28.0268H25.6725V35.7947H32.3689V55.7165H14.5564C11.9002 55.7165 9.62898 54.7735 7.74282 52.8873C5.85665 51.0011 4.91357 48.7299 4.91357 46.0737V13.9308C4.91357 11.2746 5.85665 9.00337 7.74282 7.11721C9.62898 5.23104 11.9002 4.28796 14.5564 4.28796H46.6993Z"
+                    fill="#29292B" />
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="52" viewBox="0 0 41 52" fill="none">
+                  <g clip-path="url(#clip0_1_12214)">
+                    <path
+                      d="M0.63208 18.6665C0.63208 16.4829 1.08677 14.3149 2.00132 12.1678C2.91586 10.0206 4.22309 8.02419 5.92818 6.18896C7.63326 4.35373 9.87054 2.86162 12.6452 1.71785C15.4198 0.574083 18.4941 0.00219727 21.8681 0.00219727C27.3451 0.00219727 31.8403 1.70226 35.3538 5.09718C38.8673 8.4921 40.6241 12.4953 40.6241 17.1068C40.6241 23.0336 39.136 27.931 36.1547 31.7938C33.1734 35.6567 29.324 37.5907 24.6066 37.5907C23.0565 37.5907 21.5995 37.2267 20.2406 36.4989C18.8817 35.771 17.9258 34.8872 17.3729 33.8474L15.3061 42.0618C15.1356 42.722 14.9083 43.3875 14.6344 44.0634C14.3606 44.7392 14.0558 45.3891 13.7302 46.013C13.4047 46.6369 13.074 47.2243 12.7485 47.7806C12.423 48.3369 12.0923 48.8568 11.7668 49.3403C11.4413 49.8238 11.1571 50.2345 10.9143 50.5621C10.6714 50.8896 10.4492 51.1756 10.2426 51.4199L9.93255 51.8358C9.82921 51.9762 9.6897 52.0282 9.51919 51.9918C9.34868 51.9554 9.24534 51.8514 9.20918 51.6799C9.20918 51.6435 9.18334 51.4043 9.13167 50.952C9.08 50.4997 9.02833 50.0266 8.97666 49.5223C8.92499 49.018 8.87333 48.3681 8.82166 47.5727C8.76999 46.7772 8.75449 46.0026 8.76999 45.2591C8.78549 44.5157 8.83716 43.6891 8.92499 42.7896C9.01283 41.8902 9.14201 41.0584 9.31251 40.2941C9.6897 38.6669 10.9659 33.2391 13.136 24.0214C12.8622 23.4651 12.6348 22.7996 12.4643 22.0198C12.2938 21.2399 12.206 20.6057 12.206 20.1222L12.1543 19.3423C12.1543 17.1224 12.7124 15.2767 13.8336 13.8054C14.9548 12.3341 16.3034 11.5959 17.8896 11.5959C19.1658 11.5959 20.1527 12.0222 20.8606 12.8696C21.5685 13.7171 21.9198 14.7828 21.9198 16.067C21.9198 16.8624 21.7751 17.845 21.4806 19.0044C21.1861 20.1638 20.7986 21.4999 20.3181 23.0076C19.8375 24.5153 19.4914 25.737 19.2847 26.6729C18.9385 28.2325 19.2433 29.5843 20.1889 30.728C21.1344 31.8718 22.4003 32.4437 23.9866 32.4437C26.7096 32.4437 28.9572 30.8944 30.7294 27.7906C32.5017 24.6869 33.3904 20.9384 33.3904 16.5349C33.3904 13.1712 32.3053 10.4261 30.1352 8.29454C27.9651 6.16296 24.9321 5.09718 21.0414 5.09718C16.7012 5.09718 13.1774 6.5009 10.4751 9.30834C7.77277 12.1158 6.41904 15.4795 6.41904 19.3943C6.41904 21.7183 7.07524 23.6731 8.38247 25.2691C8.83199 25.789 8.96633 26.3453 8.79582 26.9328C8.72865 27.1044 8.62531 27.5047 8.48581 28.1286C8.3463 28.7524 8.24296 29.1528 8.17579 29.3243C8.10862 29.7039 7.93295 29.9586 7.6591 30.0782C7.38525 30.1978 7.07524 30.1926 6.72905 30.0522C4.69845 29.2204 3.17421 27.7906 2.15632 25.763C1.13844 23.7354 0.63208 21.3699 0.63208 18.6665Z"
+                      fill="#29292B" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_12214">
+                      <rect width="40" height="52" fill="white" transform="translate(0.62793 0.00219727)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <path
+                    d="M55.6279 14.5022C53.7488 15.3175 51.7615 15.8564 49.7279 16.1022C51.8734 14.8205 53.4811 12.8042 54.2529 10.4272C52.2368 11.6274 50.0298 12.473 47.7279 12.9272C46.1893 11.2587 44.1404 10.148 41.9025 9.76936C39.6646 9.39075 37.3643 9.76563 35.3624 10.8352C33.3605 11.9048 31.7703 13.6086 30.841 15.6793C29.9118 17.7501 29.6962 20.0707 30.2279 22.2772C26.1515 22.071 22.164 21.0096 18.5246 19.1619C14.8851 17.3142 11.675 14.7215 9.10293 11.5522C8.20077 13.1277 7.72673 14.9118 7.72793 16.7272C7.72473 18.4132 8.13847 20.0738 8.93232 21.5611C9.72616 23.0485 10.8755 24.3165 12.2779 25.2522C10.6479 25.2079 9.05264 24.7705 7.62793 23.9772V24.1022C7.64015 26.4645 8.46792 28.75 9.97122 30.5721C11.4745 32.3943 13.5611 33.6413 15.8779 34.1022C14.9861 34.3736 14.0601 34.5168 13.1279 34.5272C12.4827 34.5197 11.839 34.4612 11.2029 34.3522C11.8627 36.3843 13.1395 38.1601 14.8556 39.4326C16.5717 40.7052 18.6419 41.4111 20.7779 41.4522C17.1709 44.2904 12.7176 45.8394 8.12793 45.8522C7.29227 45.855 6.45727 45.8049 5.62793 45.7022C10.314 48.7279 15.775 50.334 21.3529 50.3272C25.2022 50.3672 29.0208 49.6398 32.5857 48.1874C36.1507 46.7351 39.3905 44.5869 42.1159 41.8685C44.8414 39.15 46.9978 35.9157 48.4593 32.3545C49.9208 28.7933 50.658 24.9766 50.6279 21.1272C50.6279 20.7022 50.6279 20.2522 50.6279 19.8022C52.5897 18.3393 54.2816 16.5458 55.6279 14.5022Z"
+                    fill="#29292B" />
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <path
+                    d="M58.128 24.2772C58.2516 20.6988 57.4691 17.1472 55.853 13.9522C54.7565 12.6412 53.2348 11.7564 51.553 11.4522C44.5968 10.821 37.6118 10.5623 30.628 10.6772C23.6696 10.5571 16.7098 10.8074 9.778 11.4272C8.40755 11.6764 7.13929 12.3193 6.128 13.2772C3.878 15.3522 3.628 18.9022 3.378 21.9022C3.01528 27.2961 3.01528 32.7082 3.378 38.1022C3.45032 39.7907 3.70173 41.4667 4.128 43.1022C4.42943 44.3648 5.0393 45.533 5.903 46.5022C6.92117 47.5108 8.21896 48.1902 9.628 48.4522C15.0178 49.1175 20.4485 49.3932 25.878 49.2772C34.628 49.4022 42.303 49.2772 51.378 48.5772C52.8216 48.3313 54.156 47.651 55.203 46.6272C55.9029 45.9269 56.4257 45.0699 56.728 44.1272C57.6221 41.3837 58.0612 38.5124 58.028 35.6272C58.128 34.2272 58.128 25.7772 58.128 24.2772ZM24.978 37.1272V21.6522L39.778 29.4272C35.628 31.7272 30.153 34.3272 24.978 37.1272Z"
+                    fill="#29292B" />
+                </svg>
+              </a>
+              <a class="footer__icons-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <path
+                    d="M24.1993 40.7165C24.1993 41.6093 24.0598 42.5245 23.7808 43.462C23.5018 44.3995 23.0219 45.2477 22.3411 46.0066C21.6603 46.7656 20.8511 47.145 19.9136 47.145C18.9761 47.145 18.167 46.7656 17.4862 46.0066C16.8053 45.2477 16.3254 44.3995 16.0464 43.462C15.7674 42.5245 15.6279 41.6093 15.6279 40.7165C15.6279 39.8236 15.7674 38.9084 16.0464 37.9709C16.3254 37.0334 16.8053 36.1852 17.4862 35.4263C18.167 34.6674 18.9761 34.2879 19.9136 34.2879C20.8511 34.2879 21.6603 34.6674 22.3411 35.4263C23.0219 36.1852 23.5018 37.0334 23.7808 37.9709C24.0598 38.9084 24.1993 39.8236 24.1993 40.7165ZM45.6279 40.7165C45.6279 41.6093 45.4884 42.5245 45.2094 43.462C44.9303 44.3995 44.4504 45.2477 43.7696 46.0066C43.0888 46.7656 42.2797 47.145 41.3422 47.145C40.4047 47.145 39.5955 46.7656 38.9147 46.0066C38.2339 45.2477 37.754 44.3995 37.475 43.462C37.196 42.5245 37.0565 41.6093 37.0565 40.7165C37.0565 39.8236 37.196 38.9084 37.475 37.9709C37.754 37.0334 38.2339 36.1852 38.9147 35.4263C39.5955 34.6674 40.4047 34.2879 41.3422 34.2879C42.2797 34.2879 43.0888 34.6674 43.7696 35.4263C44.4504 36.1852 44.9303 37.0334 45.2094 37.9709C45.4884 38.9084 45.6279 39.8236 45.6279 40.7165ZM50.985 40.7165C50.985 38.0379 50.2149 35.7611 48.6748 33.8861C47.1346 32.0111 45.0475 31.0736 42.4136 31.0736C41.4984 31.0736 39.3221 31.308 35.8846 31.7767C34.2998 32.0223 32.5475 32.145 30.6279 32.145C28.7083 32.145 26.956 32.0223 25.3712 31.7767C21.9783 31.308 19.802 31.0736 18.8422 31.0736C16.2083 31.0736 14.1212 32.0111 12.581 33.8861C11.0408 35.7611 10.2708 38.0379 10.2708 40.7165C10.2708 42.6808 10.6279 44.3939 11.3422 45.856C12.0565 47.318 12.9605 48.4676 14.0542 49.3046C15.148 50.1417 16.5096 50.8113 18.1391 51.3136C19.7685 51.8158 21.331 52.145 22.8266 52.3013C24.3221 52.4575 25.985 52.5357 27.8154 52.5357H33.4404C35.2708 52.5357 36.9337 52.4575 38.4292 52.3013C39.9248 52.145 41.4873 51.8158 43.1167 51.3136C44.7462 50.8113 46.1078 50.1417 47.2016 49.3046C48.2953 48.4676 49.1993 47.318 49.9136 45.856C50.6279 44.3939 50.985 42.6808 50.985 40.7165ZM58.485 34.8236C58.485 39.4441 57.8042 43.1383 56.4426 45.9062C55.5944 47.6249 54.417 49.1093 52.9103 50.3593C51.4036 51.6093 49.8299 52.5691 48.1893 53.2388C46.5487 53.9084 44.6513 54.4386 42.4973 54.8292C40.3433 55.2198 38.4292 55.4653 36.7551 55.5658C35.081 55.6662 33.2172 55.7165 31.1636 55.7165C29.4225 55.7165 27.8377 55.683 26.4091 55.616C24.9806 55.5491 23.3344 55.4095 21.4705 55.1975C19.6067 54.9854 17.9047 54.6506 16.3645 54.193C14.8243 53.7354 13.2953 53.1607 11.7774 52.4687C10.2596 51.7767 8.90914 50.8727 7.72611 49.7566C6.54307 48.6406 5.58325 47.3571 4.84664 45.9062C3.46272 43.1607 2.77075 39.4665 2.77075 34.8236C2.77075 29.5334 4.28861 25.1138 7.32432 21.5647C6.72164 19.7343 6.42031 17.837 6.42031 15.8727C6.42031 13.2834 6.9895 10.8504 8.12789 8.57361C10.5386 8.57361 12.6591 9.01446 14.4895 9.89615C16.3199 10.7778 18.4292 12.1562 20.8176 14.0312C24.0989 13.2499 27.5475 12.8593 31.1636 12.8593C34.4672 12.8593 37.5922 13.2165 40.5386 13.9308C42.8824 12.1004 44.9694 10.7499 46.7998 9.87941C48.6301 9.00888 50.7395 8.57361 53.1279 8.57361C54.2663 10.8504 54.8355 13.2834 54.8355 15.8727C54.8355 17.8147 54.5341 19.6897 53.9315 21.4977C56.9672 25.0691 58.485 29.5111 58.485 34.8236Z"
+                    fill="#29292B" />
+                </svg>
+              </a>
+            </div>
+            <div class="footer__blocks">
+              <div class="footer__block">
+                <h3 class="footer__block-title">
+                  Recruitment Info
+                </h3>
+                <p class="footer__block-text">Candidate First Name: Username</p>
+                <p class="footer__block-text">Candidate Last Name: Username</p>
+                <p class="footer__block-text">Spent Time: X hours</p>
+                <a class="footer__block-text" href="mailto:Email: username@server.name">Email: username@server.name</a>
+                <p class="footer__block-text">Spent Time: X hours</p>
+                <p class="footer__block-text">Test date: dd.mm.yyyy</p>
+              </div>
+              <div class="footer__block">
+                <h3 class="footer__block-title">
+                  Resources
+                </h3>
+                <a class="footer__block-text" href="#">Loader icon - search on Fontello.com</a>
+                <a class="footer__block-text" href="#">Icons - Entypo</a>
+                <a class="footer__block-text" href="#">Fonts - search in this file</a>
+                <a class="footer__block-text" href="#">Background - standart situation: designer lose file</a>
+              </div>
+              <div class="footer__block">
+                <h3 class="footer__block-title">
+                  Navigation
+                </h3>
+                <a class="footer__block-text" href="#">Development</a>
+                <a class="footer__block-text" href="#">Application</a>
+                <a class="footer__block-text" href="#">Holding</a>
+                <a class="footer__block-text" href="#">About</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__copy">
+              <img src="/images/copy.svg" alt="">
+              <p class="footer__copy-text">Parrot Wings</p>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-images">
+                <a class="footer__bottom-link" href="#"><img class="footer__bottom-image" src="/images/firefox.svg"
+                    alt=""></a>
+                <a class="footer__bottom-link" href="#"><img class="footer__bottom-image" src="/images/chrome.svg"
+                    alt=""></a>
+                <a class="footer__bottom-link" href="#"><img class="footer__bottom-image" src="/images/explorer.svg"
+                    alt=""></a>
+                <a class="footer__bottom-link" href="#"><img class="footer__bottom-image" src="/images/safari.svg"
+                    alt=""></a>
+                <a class="footer__bottom-link" href="#"><img class="footer__bottom-image" src="/images/opera.svg"
+                    alt=""></a>
+              </div>
+              <div class="footer__bottom-text">
+                Project should work on next stack:
+                IE11, actual version of Firefox, Chrome
+                on desktop and android, Opera (opera mini), Safari on mac and ios.
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
