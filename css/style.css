@@ -64,7 +64,7 @@ button {
 
 .header {
 	min-height: 155px;
-	background-image: url('/images/header-bg.png');
+	background-image: url('../images/header-bg.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
@@ -131,8 +131,6 @@ button {
 	background: #b6b6b6;
 	color: #000;
 }
-
-
 
 .burger-btn {
 	margin-left: 20px;
@@ -558,7 +556,6 @@ button {
 
 .footer__blocks {
 	display: flex;
-	flex-wrap: wrap;
 	align-items: start;
 }
 
@@ -678,7 +675,7 @@ button {
 	}
 
 	.footer__right {
-		color: #5C5C5C;
+		color: #5c5c5c;
 		margin: 0 auto;
 	}
 
@@ -714,6 +711,9 @@ button {
 	.stock__monitor {
 		width: 340px;
 		margin-top: -20px;
+	}
+	.footer__blocks {
+		flex-wrap: wrap;
 	}
 }
 
@@ -774,15 +774,15 @@ button {
 }
 
 @media (max-width: 672px) {
-	.header .stock__exchange-form{
+	.header .stock__exchange-form {
 		position: absolute;
 		right: 0;
-		transition: all .1s;
+		transition: all 0.1s;
 		transform: translateY(-100%);
 		display: block;
 	}
 
-	.stock__exchange-form.open{
+	.stock__exchange-form.open {
 		transform: translateY(0%);
 		transform: translateX(-50%);
 	}
@@ -850,7 +850,7 @@ button {
 	.header.open .header__links {
 		position: fixed;
 	}
-		.header .stock__exchange-title {
+	.header .stock__exchange-title {
 		display: block;
 		position: absolute;
 		left: 0;
@@ -870,6 +870,9 @@ button {
 }
 
 @media (max-width: 440px) {
+	.stock__exchange-form.open {
+		transform: translateX(-30%);
+	}
 	.footer__icons a + a {
 		margin-left: 11px;
 	}
@@ -903,7 +906,11 @@ button {
 		max-width: 300px;
 	}
 }
-
+@media (max-width: 440px) {
+.stock__exchange-form.open {
+		transform: translateX(-20%);
+	}
+}
 @media (max-width: 355px) {
 	.stock__products-item--name {
 		font-size: 14px;
