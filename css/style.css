@@ -64,7 +64,7 @@ button {
 
 .header {
 	min-height: 155px;
-	background-image: url('../images/header-bg.png');
+	background-image: url('./images/header-bg.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center center;
